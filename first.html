@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" style="background-color:black; color:white; padding:60px;"  >
   <head>
     <meta charset="utf-8">
     <title>BROMITA
@@ -35,35 +35,46 @@
     <p><sup>sup tampoco se para que sirve</sup></p>
     <p><ins>ins es para algo</ins></p>
     <p><del>del tampoco se para que es</del></p>
-    <h1><span>About me </span></h1>
+    <h1><span style="color:pink">About me </span></h1>
     <p>Me llamo <strong>david</strong> y soy una mierda</p>
     <p class="quote"> Declare variables not war</p>
     <hr>
     <h2>Vamos a hacer una lista</h2>
     <p>una lista no  ordenada</p>
-    <ul>
-      <li>lapiz</li>
-      <li>boli</li>
-      <li>calculadora</li>
-      <li>goma</li>
-      <li>libreta</li>
-    </ul>
+    <div class="" style="background-color:white; color:black;" width="400px">
+      <ul>
+        <li>lapiz</li>
+        <li>boli</li>
+        <li>calculadora</li>
+        <li>goma</li>
+        <li>libreta</li>
+      </ul>
+    </div>
     <p>una lista ordenada</p>
-    <ol>
-      <li>nazer</li>
-      <li>deprimirse</li>
-      <li>morir</li>
-    </ol>
+    <div class="" style="background-color:white; color:black;" width="400px">
+      <ol>
+        <li>nazer</li>
+        <li>deprimirse</li>
+        <li>morir</li>
+      </ol>
+    </div>
     <hr>
     <h1><span>Lo que puedo hacer</span></h1>
     <ul>
-      <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fapkpure.com%2Fes%2Fnada%2Fcom.tutozz.nada&psig=AOvVaw0RpAFhLBkYG-JGRh26wa6O&ust=1649417924338000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPipq-DugfcCFQAAAAAdAAAAABAD">basicmanete nada</a></li>
+      <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fapkpure.com%2Fes%2Fnada%2Fcom.tutozz.nada&psig=AOvVaw0RpAFhLBkYG-JGRh26wa6O&ust=1649417924338000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCPipq-DugfcCFQAAAAAdAAAAABAD" target="_blank">basicmanete nada</a></li>
       <li>ser imbecil</li>
     </ul>
     <hr>
-    <h1>Tablas</h1>
-    <table border="2" align="center" bgcolor="cyan">
-      <tr>
+    <h1>Tabla</h1>
+    <table border="2" align="center" style="background-color:white; color:black;">
+      <tr align="center">
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miercoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+      <tr align="center">
         <td>xd</td>
         <td>lol</td>
         <td>omg</td>
@@ -75,8 +86,43 @@
       </tr>
       <tr>
         <td>xd</td>
-        <td colspan="2">omg</td>
+        <td colspan="3" align="center">omg</td>
       </tr>
     </table>
+    <hr>
+    <h1>Tipos de input text</h1>
+    <h3>TextBox</h3>
+      <form class="TextBox" action="https://github.com/SanchezHL/b" method="post" style="color:white;">
+        Username: <input type="text" name="algo" value=""><br>
+        Password: <input type="password" name="algo pero oculto" value="">
+      </form>
+    <h3>Puntos</h3>
+      <form class="Radio" action="index.html" method="post">
+        <input type="radio" name="gender" value="male">male <br>
+        <input type="radio" name="gender" value="female">female
+      </form>
+    <h3>Checkbox</h3>
+      <input type="checkbox" name="Male" value="1"> Male <br>
+      <input type="checkbox" name="Female" value="2">Female
+    <h3>Submit button</h3>
+      <input type="submit" name="" value="Submit">
+    <hr>
+    <h1>Contact Me</h1>
+      <form class="" action="index.html" method="post">
+        <input type="text" name="name" value=""> Name<br>
+        <input type="email" name="email" value=""> Email<br>
+        <textarea name="message" rows="8" cols="80"></textarea><br>
+        <input type="submit" name="" value="SEND" class="submit"><br>
+      </form>
+      <hr>
+      <h1>Frames</h1>
+       <frameset rows="100, 25%, *">
+         <frame src="a.htm" noresize="noresize" >
+       </frameset>
+    <hr>
+    <h1>My media</h1>
+    <div class="media">
+      <iframe src="https://www.google.com" width="300" height="150" allowfullscreen framborder="0"></iframe>
+    </div>
   </body>
 </html>
