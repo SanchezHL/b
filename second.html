@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" style="background-color:black; color:white; padding:60px;">
+<html lang="en" dir="ltr" style="background-color:#666699 ; color:white; padding:60px;">
   <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>HTML5</title>
   </head>
@@ -12,7 +13,7 @@
     <nav align="center">
       <h3>Navegacion</h3>
       <div class="nav" align="center">
-        <table border="3px" style="border-color:white; background-color:white; table-layout:fixed; width:100%;">
+        <table border="2px" style="border-color:white; background-color:white; table-layout:fixed; width:100%;">
           <tr align="center">
             <td><a href="file:///C:/Users/DavidSánchez-Hermosi/github/b/first.html" target="_blank">Primera pagina</a></td>
             <td><a href="#">Home</a></td>
@@ -22,13 +23,13 @@
       </div>
     </nav>
     <hr>
-    <article class="">
-      <section>
+    <article class="mainArticle">
+      <section id="input">
         <form class="" action="index.html" method="post">
           <input type="text" name="text" value="Yes">
         </form>
       </section>
-      <section>
+      <section id="input">
         <form class="" action="index.html" method="post">
           <input type="radio" name="accept" value="yes">
         </form>
@@ -50,6 +51,16 @@
         <audio src="resources\ChancePL.mp3" style="background-color:white; color:white;" controls>
           Text File not supported by your browser
         </audio>
+      </section>
+      <section>
+        <video src="resources\pato.mp4" autoplay poster="posterimage.jpg" width="300px"height="200px" loop controls>
+          Video not supported by yor browser
+        </video>
+      </section>
+      <section>
+        <div class="">
+          status:<progress value="35" max="100">35%</progress>
+        </div>
       </section>
     </article>
     <aside class="">

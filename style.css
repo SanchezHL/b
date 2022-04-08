@@ -1,3 +1,21 @@
-.sent¨{
-  color: rgb(255, 0, 0.5);
+video{
+  border:2px
+
+}
+progress{
+  color:green;
+  height:200px;
+  width: 100%;
+}
+.mainArticle{
+  background-color:#ebd9c7;
+  color: black;
+  align-items: stretch;
+  opacity: 90%;
+}
+#input{
+  align-self: center;
+  width: 100%;
+  color: black;
+  background-color: black;
 }
