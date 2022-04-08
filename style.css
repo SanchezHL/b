@@ -34,6 +34,19 @@ progress{
   background-color:#ebd9c7;
   border: none;
   border-radius: 1.5vw;
-  color: black;
+  color:rgb(204, 0, 102) ;
   font-family: monospace;
+}
+#titile .first em{
+  color:;
+}
+.nav{
+  /*aqui hay que poner un borde to chulo */
+  border: 0.5vw
+  color: white;
+  table-layout: fixed;
+  background-color:rgb(040, 170, 89);
+  border-color: white;
+  width: 100%;
+  border-radius: 1.5vw;
 }
