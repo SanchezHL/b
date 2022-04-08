@@ -1,3 +1,10 @@
+*{
+  margin: 0.2vw;
+  padding: 0.3vw;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
 video{
   border:2px
 
@@ -10,12 +17,23 @@ progress{
 .mainArticle{
   background-color:#ebd9c7;
   color: black;
-  align-items: stretch;
+  align-items:center;
   opacity: 90%;
+  padding: 40px;
+  border: none;
+  border-radius: 1.5vw;
+  align-content: center;
 }
 #input{
   align-self: center;
   width: 100%;
+  color: ;
+  background-color:;
+}
+#title{
+  background-color:#ebd9c7;
+  border: none;
+  border-radius: 1.5vw;
   color: black;
-  background-color: black;
+  font-family: monospace;
 }
