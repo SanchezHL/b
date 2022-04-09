@@ -4,6 +4,20 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title>HTML5</title>
+    <script type="text/javascript">
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+      function drag(ev) {
+        ev.dataTransfer.setData("image",ev.target.id);
+      }
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("image");
+
+      ev.target.appendchild(document.getElementById(data));
+      }
+    </script>
   </head>
   <body>
     <header align="center" id="title">
@@ -24,6 +38,15 @@
     </nav>
     <hr>
     <article class="mainArticle">
+      <section>
+        <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <svg width="200px" height="200px">
+            <circle cx="80" cy="80" r="50" fill="pink" stroke="black">
+          </svg>
+            <h3 align="center">otras formas:</h3>rect, line, polyline, polygon, ellipse
+        </div>
+        <img id="image" src="resources\unknown.png" alt=""draggable="true" ondragstart="drag(event)" width="150px" height="50px">
+      </section>
       <section id="input">
         <form class="" action="index.html" method="post">
           <input type="text" name="text" value="Yes">
@@ -32,7 +55,16 @@
       <section id="input">
         <form class="" action="index.html" method="post">
           <input type="radio" name="accept" value="yes">
+          <input id="button" type="button" name="js" value="js">
         </form>
+        <script type="text/javascript">
+          localStorage.setItem("key1", "esto es un javascript");
+          alert(localStorage.getItem("key1"));
+          localStorage.setItem("key2", navigator.geolocation.getCurrentPosition(showLocation));
+          alert(localStorage.getItem("key2"));
+          navigator.geolocation.getCurrentPosition(showLocation)
+          //el navigaor todavia no lo entienfo//
+        </script>
       </section>
       <section>
         <ol>
@@ -61,6 +93,9 @@
         <div class="">
           status:<progress value="35" max="100">35%</progress>
         </div>
+      </section>
+      <section>
+
       </section>
     </article>
     <aside class="">

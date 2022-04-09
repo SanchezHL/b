@@ -1,4 +1,5 @@
 *{
+  /*margin hace la pagina que se vea un poco rara quizas */
   margin: 0.2vw;
   padding: 0.3vw;
   box-sizing: border-box;
@@ -23,6 +24,15 @@ progress{
   border: none;
   border-radius: 1.5vw;
   align-content: center;
+}
+section{
+    background-color: rgb(204, 0, 102);
+    border: none;
+    border-radius: 1.5vw;
+    padding: 20px;
+    align-items: center;
+    max-width: 30%;
+    align-self: center;
 }
 #input{
   align-self: center;
@@ -50,4 +60,17 @@ progress{
   border-color: white;
   width: 100%;
   border-radius: 1.5vw;
+}
+#button{
+  max-width: 100%;
+  width:100%;
+  background-color: pink;
+  border: none;
+  border-radius: 1.5vw;
+}
+.box{
+  border: 3px;
+  border-color:black;
+  width: 100%;
+  height: 200px;
 }
