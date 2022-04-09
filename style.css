@@ -2,10 +2,10 @@
   margin: 0.2vw;
   padding: 0.3vw;
   box-sizing: border-box;
-  font-family: 'Outfit', sans-serif;
+  font-family: Gothic;
+  font-size: 20px;
 }
-
-video{
+  video{
   border:2px
 
 }
@@ -36,6 +36,7 @@ progress{
   border-radius: 1.5vw;
   color:rgb(204, 0, 102) ;
   font-family: monospace;
+  font-size: 40px;
 }
 #titile .first em{
   color:;
