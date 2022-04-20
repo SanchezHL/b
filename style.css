@@ -1,7 +1,7 @@
 *{
   /*margin hace la pagina que se vea un poco rara quizas */
-  margin: 0.2vw;
-  padding: 0.3vw;
+  margin: none;
+  padding: none;
   box-sizing: border-box;
   font-family: Gothic;
   font-size: 20px;
@@ -16,7 +16,7 @@ progress{
   width: 100%;
 }
 .mainArticle{
-  background-color:#ebd9c7;
+  background-color:;
   color: black;
   align-items:center;
   opacity: 90%;
@@ -26,7 +26,7 @@ progress{
   align-content: center;
 }
 section{
-    background-color: rgb(204, 0, 102);
+    background-color:;
     border: none;
     border-radius: 1.5vw;
     padding: 20px;
@@ -35,6 +35,10 @@ section{
     align-self: center;
     justify-content: center;
 }
+footer{
+  background-color: black;
+
+}
 #input{
   align-self: center;
   width: 100%;
@@ -42,8 +46,9 @@ section{
   background-color:;
 }
 #title{
-  background-color:#ebd9c7;
-  border: none;
+  background-color:;
+  border: 1px;
+  border-color: pink;
   border-radius: 1.5vw;
   color:rgb(204, 0, 102) ;
   font-family: monospace;
@@ -54,11 +59,12 @@ section{
 }
 .nav{
   /*aqui hay que poner un borde to chulo */
-  border: 0.5vw
-  color: white;
+  border-left-style:outset;
+  border-right-style:inset;
+  color:black;
   table-layout: fixed;
   background-color:rgb(040, 170, 89);
-  border-color: white;
+  border-color: pink;
   width: 100%;
   border-radius: 1.5vw;
 }
@@ -76,4 +82,28 @@ section{
   width: 100%;
   height: 200px;
   justify-content: center;
+}
+.gradientbackground{
+  background: linear-gradient(
+      to right, #833ab4,
+      #fd1d1d, #fcb045);
+      background-size: 400%, 400%;
+      animation: animate-background 10s infinite ease-in-out;
+    )
+}
+@keyframes animate-background{
+  0%{
+      background-position: 0 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0% 50%;
+  }
+
+}
+.resizable{
+  resize: both;
+  overflow: auto;
 }
