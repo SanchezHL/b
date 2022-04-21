@@ -18,7 +18,7 @@ html::-webkit-scrollbar {
   width: 99%;
   height: 0.4vw;
   background: #ccc;
-  border-radius: 1.5vw  
+  border-radius: 1.5vw
 }
 .progress-bar{
   width: 0%;
@@ -32,9 +32,17 @@ video{
 
 }
 header{
-  height: 20vw;
+  height: 35vw;
   align-items: center;
 
+}
+@font-face {
+  font-family: "newtown howard";
+  src: url(resources/fonts/NWF.ttf);
+}
+.title-container{
+  height: 100%;
+  width: 100%;
 }
 .textbgimage{
   text-align: center;
@@ -43,18 +51,21 @@ header{
   font-weight: bold;
   -webkit-text-fill-color:transparent;
   -webkit-background-clip:text;
+  font-family: "newtown howard",'Lucida Console', monospace;
+  transform: rotate(-18deg);
 }
-.first{
-  font-size: 40px;
-  font-weight: bolder;
-  background-image: url(C:\Users\DavidSánchez-Hermosi\github\b\resources\discoteca.jpeg);
-
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-repeat: repeat;
-  text-align: center;
-  -webkit-text-fill-color:transparent;
-
+.textbgimage:hover{
+  transform:rotate(-18deg);
+  animation: animate-tittle 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes animate-tittle {
+    0%{
+      transform: scale(1.05) rotate(-18deg);
+    }
+    100%{
+      transform: scale(1.25) rotate(-18deg);
+    }
 }
 .mainArticle{
   background-color:;
