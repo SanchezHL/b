@@ -1,19 +1,60 @@
+html::-webkit-scrollbar {
+    width: 0px; /* For Chrome, Safari, and Opera */
+}
 *{
   /*margin hace la pagina que se vea un poco rara quizas */
   margin: none;
-  padding: none;
-  box-sizing: border-box;
+  padding: none
   font-family: Gothic;
   font-size: 20px;
 }
-  video{
+.scrollcontrollerdiv{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+.progress-container{
+  width: 99%;
+  height: 0.4vw;
+  background: #ccc;
+  border-radius: 1.5vw  
+}
+.progress-bar{
+  width: 0%;
+  height: 0.4vw;
+  background:linear-gradient(
+      to right, #833ab4,
+      #fd1d1d, #fcb045);
+}
+video{
   border:2px
 
 }
-progress{
-  color:green;
-  height:200px;
-  width: 100%;
+header{
+  height: 20vw;
+  align-items: center;
+
+}
+.textbgimage{
+  text-align: center;
+  background-image: url(resources/discoteca.jpeg);
+  font-size: 12vw;
+  font-weight: bold;
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip:text;
+}
+.first{
+  font-size: 40px;
+  font-weight: bolder;
+  background-image: url(C:\Users\DavidSánchez-Hermosi\github\b\resources\discoteca.jpeg);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-repeat: repeat;
+  text-align: center;
+  -webkit-text-fill-color:transparent;
+
 }
 .mainArticle{
   background-color:;
@@ -36,7 +77,9 @@ section{
     justify-content: center;
 }
 footer{
-  background-color: black;
+  background-color: #ff6666;
+  height: 12vw;
+  width: 100%;
 
 }
 #input{
@@ -45,25 +88,14 @@ footer{
   color: ;
   background-color:;
 }
-#title{
-  background-color:;
-  border: 1px;
-  border-color: pink;
-  border-radius: 1.5vw;
-  color:rgb(204, 0, 102) ;
-  font-family: monospace;
-  font-size: 40px;
-}
-#titile .first em{
-  color:;
-}
 .nav{
   /*aqui hay que poner un borde to chulo */
   border-left-style:outset;
   border-right-style:inset;
   color:black;
   table-layout: fixed;
-  background-color:rgb(040, 170, 89);
+  background-color: pink;
+  opacity:40%;
   border-color: pink;
   width: 100%;
   border-radius: 1.5vw;
@@ -74,6 +106,10 @@ footer{
   background-color: pink;
   border: none;
   border-radius: 1.5vw;
+}
+#audioPL{
+  color:#b32400;
+  align:right;
 }
 .box{
 
@@ -88,7 +124,7 @@ footer{
       to right, #833ab4,
       #fd1d1d, #fcb045);
       background-size: 400%, 400%;
-      animation: animate-background 10s infinite ease-in-out;
+      animation: animate-background 15s infinite ease-in-out;
     )
 }
 @keyframes animate-background{

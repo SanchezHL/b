@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="gradientbackground" style="background-color:#666699 ; color:white; padding:60px;">
+<html lang="en" dir="ltr" class="gradientbackground" style="color:white;">
   <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
@@ -18,13 +18,27 @@
       ev.target.appendchild(document.getElementById(data));
       }
     </script>
+    <script type="text/javascript">
+        window.onscroll = function(){myFunction()};
+
+        function myFunction(){
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
   </head>
   <body>
-    <header align="center" id="title">
-      <h1 class="first">LA HOSTIA DE PAGINA</h1>
+      <div class="scrollcontrollerdiv">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+       </div>
+    <header>
+      <p class="textbgimage">BIENVENIDOS</p>
     </header>
     <nav align="center">
-      <h2>Navegacion</h2>
       <div class="" align="center">
         <table class="nav">
           <tr align="center">
@@ -54,7 +68,7 @@
       <section id="input">
         <form class="" action="index.html" method="post">
           <input type="radio" name="accept" value="yes">
-          <input id="button" type="button" name="js" value="js">
+          <input id="button" type=" button" name="js" value="js">
         </form>
         <script type="text/javascript">
           localStorage.setItem("key1", "esto es un javascript");
@@ -77,9 +91,7 @@
         </ol>
       </section>
       <section>
-        <h3>posibles argumentos</h3>
-        <p>autoplay y loop</p>
-        <audio src="resources\ChancePL.mp3" style="background-color:white; color:white;" autoplay loop controls>
+        <audio id="audioPL"src="resources\ChancePL.mp3" autoplay loop controls>
           Text File not supported by your browser
         </audio>
       </section>
@@ -88,20 +100,12 @@
           Video not supported by yor browser
         </video>
       </section>
-      <section>
-        <div class="">
-          status:<progress value="35" max="100">35%</progress>
-        </div>
-      </section>
-      <section>
-
-      </section>
     </article>
     <aside class="">
       <ul>
         <li><a href="https://github.com/SanchezHL/b" target="_blank">github</a></li>
       </ul>
     </aside>
-    <footer align="right">By David</footer>
+    <footer>By David</footer>
   </body>
 </html>
